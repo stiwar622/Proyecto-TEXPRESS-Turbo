@@ -1,0 +1,204 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: "roboto", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #9c5605;
+}
+
+/* Section Styles */
+section {
+    padding: 10rem 0;
+    background-image: linear-gradient(395deg, #007BFF, #F6c641);
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    margin-top: -89px;
+    margin-left: 20px;
+    position: absolute;
+  }
+
+/* Heading Styles */
+.heading {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    letter-spacing: 3px;
+    margin-right: -3px;
+    margin-bottom: 5rem;
+    text-align: center;
+    color: #333;
+    position: relative;
+}
+
+.heading::after {
+    content: "";
+    width: 10rem;
+    height: .8rem;
+    background-color: #18221e;
+    position: absolute;
+    bottom: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2rem;
+}
+
+/* Container Styles */
+.container-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 100%;
+}
+
+/* Card Wrapper */
+.card-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+}
+
+/* Card Styles */
+.card {
+    width: 30rem;
+    background-color: #edd147;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    box-shadow: .5rem .5rem .3rem rgba(0, 0, 0, 0.2);
+}
+
+.card .card-img {
+    width: 100%;
+    height: 26rem;
+    object-fit: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+    clip: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+}
+
+.profile-img {
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: -11rem;
+    z-index: 999;
+    border: 1rem solid #eef8eb;
+}
+
+.card h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin: 1.5rem;
+}
+
+.job-title {
+    color: #777;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.about {
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+    text-align: center;
+    color: #333;
+}
+
+.card .btn {
+    padding: 1rem 2.5rem;
+    background-color: #445ae3;
+    border-radius: 2rem;
+    margin: 1rem 0;
+    text-transform: uppercase;
+    color: #eee;
+    font-size: 1.4rem;
+    transition: all .5s;
+}
+
+.card .btn:hover {
+    background-color: #333; /* Cambia el color de fondo */
+    color: #fff; /* Cambia el color del texto */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+    transition: all 0.3s ease-in-out;
+}
+
+.card.btn:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Eleva la carta */
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+    transition: all 0.3s ease-in-out; /* Suaviza la animación */
+}
+
+/* Social Media Styles */
+.social-media {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem 0;
+    margin-top: 1.5rem;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+.social-media i {
+    font-size: 3rem;
+}
+
+/* Social Media Icon Colors */
+.fa-facebook-square {
+    color: #3b5999;
+}
+
+.fa-twitter-square {
+    color: #55acee;
+}
+
+.fa-instagram-square {
+    color: #e4405f;
+}
+
+/* Hover Effects for Social Media Icons */
+.fa-facebook-square:hover {
+    color: #45e19f;
+}
+
+.fa-twitter-square:hover {
+    color: #45e19f;
+}
+
+.fa-instagram-square:hover {
+    color: #45e19f;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%; /* Las cartas ocuparán todo el ancho */
+    }
+
+    .card-wrapper {
+        flex-direction: column; /* Las cartas se apilarán verticalmente */
+    }
+}

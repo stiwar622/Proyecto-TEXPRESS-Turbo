@@ -1,0 +1,214 @@
+/* General */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #f0f8ff 0%, #fffbe7 60%, #ffe066 100%);
+    color: #333333;
+}
+
+/* Sección de Directores */
+.directores-section {
+    max-width: 850px;
+    margin: 60px auto;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px 30px;
+    text-align: center;
+    animation: fadeInSection 1.2s ease;
+    border: 1px solid #e0e0e0;
+}
+
+@keyframes fadeInSection {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.directores-section h2 {
+    color: #4a90e2;
+    font-size: 2.2em;
+    margin-bottom: 16px;
+    letter-spacing: 0.5px;
+}
+
+.directores-desc {
+    font-size: 1.1em;
+    color: #444444;
+    margin-bottom: 30px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 12px 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    display: inline-block;
+}
+
+/* Tarjetas de Directores */
+.directores-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.director-card {
+    background: linear-gradient(135deg, #f9f9f9 80%, #f0f8ff 100%);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 24px 20px;
+    width: 240px;
+    min-height: 320px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 1px solid #e0e0e0;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInCard 0.8s ease forwards;
+}
+
+.director-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.director-card:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes fadeInCard {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.director-card:hover {
+    background: linear-gradient(135deg, #f0f8ff 80%, #e3f7ff 100%);
+    transform: translateY(-6px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.director-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 12px;
+    border: 3px solid #4a90e2;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.director-card h3 {
+    margin: 10px 0 6px 0;
+    color: #4a90e2;
+    font-size: 1.2em;
+}
+
+.rol {
+    font-size: 1em;
+    color: #444444;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.director-card p {
+    font-size: 0.95em;
+    color: #444444;
+    margin-bottom: 12px;
+    font-style: italic;
+}
+
+.mail {
+    font-size: 0.9em;
+    color: #4a90e2;
+    text-decoration: none;
+    background: #f0f8ff;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.mail:hover {
+    background: #4a90e2;
+    color: #ffffff;
+}
+
+/* Footer */
+.directores-footer {
+    text-align: center;
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 1px solid #e0e0e0;
+    color: #666666;
+    font-size: 0.95em;
+}
+
+.directores-footer a {
+    color: #4a90e2;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+.directores-footer a:hover {
+    color: #333333;
+}
+
+/* Logo */
+.logo-directores {
+    position: absolute;
+    top: 24px;
+    left: 32px;
+    display: block;
+    z-index: 10;
+    transition: transform 0.2s;
+}
+
+.logo-directores img {
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo-directores:hover {
+    transform: scale(1.05);
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+    .directores-section {
+        padding: 24px 16px;
+    }
+    .directores-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.intro-text {
+    font-size: 1.1em;
+    color: #555555;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.decorative-line {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, #4a90e2, #ffe066);
+    margin: 20px auto;
+    width: 80%;
+}
