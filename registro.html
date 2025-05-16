@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de comercios</title>
+    <link rel="icon" href="../IMG/Imagotipo.png">
+    <link rel="stylesheet" href="../CSS/registro.css">
+</head>
+<body>
+    <div class="navbar">
+        
+        <div class="logo">
+            <a href="../texpress.html"> <img src="../IMG/Imagotipo.png" alt="Logo de la página"></a>
+            
+        </div>
+        
+    </div>
+    <div class="background">
+        <div class="caja">
+            <h1>Registro de Comercios</h1>
+            <form id="registro-form">
+                <label for="nombre">Nombres</label>
+                <input class="cajaText" type="text" id="nombre" name="nombre" placeholder="Ej: Pepito Andres " required>
+                
+                <label for="direccion">Apellidos</label>
+                <input class="cajaText" type="text" id="direccion" name="direccion" placeholder="Ej: Perez Mora" required>
+                
+                <label for="telefono">Teléfono</label>
+                <input class="cajaText" type="tel" id="telefono" name="telefono" placeholder="Ej: +57 300 123 4567" required>
+                
+                <label for="email">Correo Electrónico</label>
+                <input class="cajaText" type="email" id="email" name="email" placeholder="Ej: correo@ejemplo.com" required>
+                
+
+                <label for="tipo-comercio">Tipo de Comercio</label>
+                <select class="cajaTextSelect" id="tipo-comercio" name="tipo-comercio" required>
+
+                <option value="" disabled selected>Seleccione una opción</option>
+                <option value="mercado">Mercado</option>
+
+                <option value="restaurante">Restaurante</option>
+
+                </select>
+                
+                <div>
+                    <br>
+                    <input type="checkbox" id="terminos" required>
+                        <a href="../HTML/TerminosyCondicionesRegistro.html" target="_blank">Acepto los términos y condiciones</a>
+                    </label>
+                </div>
+                <br>
+                <button id="boton" type="submit">Registrar Comercio</button>
+                <a href="../texpress.html">Ya estoy registrado</a>   
+            </form>
+        </div>
+    </div>
+
+    <footer>
+
+        <h1>Requisitos de registro para comercio en <span class="TEXPRESS">TEXPRESS</span></h1>
+        <h3>Ten en cuenta que la información solicitada aquí será requerida a través de <br>WHATSAPP o al CORREO ELECTRÓNICO que proporciones, en un tiempo <br>estimado de 24 horas.</h3>
+            <div class="acordeon">
+                <div class="acordeon-item">
+                    <button class="acordeon-titulo">Documentos legales para Registrarse en TEXPRESS</button>
+                    <div class="acordeon-contenido">
+                        <p>1. Cédula de Ciudadanía del propietario o NIT del comercio.</p>
+                        <p>2. Registro Único Tributario (RUT).</p>
+                        <p>3. Certificado de Cámara de Comercio.</p>
+                </div>
+            </div>
+        
+            <div class="acordeon-menu">
+                <div class="acordeon-item">
+                    <button class="acordeon-titulo">Menú</button>
+                    <div class="acordeon-contenido">
+                    <p> 1. Tener al menos 15 productos para registrar.</p>
+                    <p> 2. Imagen de cada productos (mayor que 360px X 360px y preferiblemente horizontal). </p>
+                    <p> 3. Nombre de cada producto. </p>
+                    <p> 4. Descripción de cada producto (como es el producto o ingredientes). </p>
+                    <p> 5. Precio de cada producto. </p>
+                        
+                </div>
+            </div>
+        
+            <div class="acordeon-logo">
+                <div class="acordeon-item">
+                    <button class="acordeon-titulo">Logo y portada</button>
+                    <div class="acordeon-contenido">
+                    <p> 1. Logo de sucursal (mayor que 360px X 360px).</p>
+                    <p> 2. Imagen de portada (mayor que 360px X 360px y preferiblemente horizontal). </p>
+                </div>
+            </div>
+    </footer>
+    
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="../JS/registro.js"></script>
+</body>
+</html>

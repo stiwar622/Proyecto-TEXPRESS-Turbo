@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú de Restaurante Food & Coffee</title>
+  <link rel="stylesheet" href="../CSS/menu.css">
+  <link rel="Icon" href="../IMG/Logotipo.png">
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <a href="../texpress.html"> <img src="../IMG/Logotipo.png" alt="Logo" class="logo"></a>
+      <h1>FOOD & COFFEE</h1>
+      <a href="#carrito" class="carrito-icon">
+        <img src="../IMG/Carrito.png" alt="Carrito">
+      </a>
+    </div>
+  </header>
+  <div id="mensaje-anuncio" class="mensaje-anuncio oculto">Producto añadido al carrito</div>
+  <main>
+    <section class="menu">
+
+      <div class="productos-grid" id="card-container">
+
+        <div class="producto">
+          <div
+            onclick="mostrarDescripcion('Descripción:','Una taza de café recién hecho, perfecta para comenzar el día, tomar un descanso o simplemente disfrutar un momento para ti. Su sabor profundo y su aroma envolvente la convierten en el mejor compañero a cualquier hora.')">
+            <img src="../IMG/Tazacafe.png" alt="Taza cafe">
+            <h3>Taza de cafe</h3>
+            <p>Descripción</p>
+            <span class="precios">$1.000</span>
+          </div>
+          <br><br>
+          <button class="agregar-carrito">Agregar al carrito</button>
+          
+        </div>
+
+        <div class="producto">
+          <div
+            onclick="mostrarDescripcion('Descripción:','Un balance perfecto entre espresso intenso, leche cremosa al vapor y una capa suave de espuma espolvoreada con un toque de canela o cacao. Ideal para acompañar una buena charla o disfrutar un momento de pausa con sabor y estilo.')">
+            <img src="../IMG/Capuchino.png" alt="Capuchino">
+            <h3>Capuchino</h3>
+            <p>Descripción del capuchino</p>
+            <span class="precios">$9.500</span>
+          </div>
+          <br><br>
+          <button class="agregar-carrito">Agregar al carrito</button>
+        </div>
+
+        <div class="producto" >
+          <div onclick="mostrarDescripcion('Descripción:','Una infusión vibrante y aromática hecha con una mezcla de frutas del bosque como fresa, mora, arándanos y frambuesa. Refrescante y naturalmente dulce, ideal para disfrutar caliente o frío. Perfecto para revitalizar tu día con un toque frutal y delicioso.')">
+          <img src="../IMG/TeFrutosRojos.png" alt="Te Frutos Rojos">
+          <h3>Te Frutos Rojos</h3>
+          <p>Descripción del te</p>
+          <span class="precios">$3.000</span>
+          </div>
+          <br><br>
+          <button class="agregar-carrito">Agregar al carrito</button>
+        </div>
+
+        <div class="producto" >
+          <div onclick="mostrarDescripcion('Descripción:','Refrescante y lleno de energía. Café suave y aromático servido con hielo, ideal para disfrutar en cualquier momento del día. Perfecto para quienes aman el sabor del buen café, pero con un giro fresco y moderno.')">
+          <img src="../IMG/CafeFrio.png" alt="Cafe frio">
+          <h3>Cafe Frio</h3>
+          <p>Descripción del cafe frio</p>
+          <span class="precios">$11.000</span>
+          </div>
+          <br><br>
+          <button class="agregar-carrito">Agregar al carrito</button>
+        </div>
+       
+      </div>
+      </div>
+      <div id="paginacion" class="paginacion"></div>
+    </section>
+    <section class="carrito">
+      <h2>Carrito <img src="../IMG/Carrito.png" alt=""></h2>
+      <ul id="lista-carrito-secundario"></ul>
+      <p id="total-secundario"></p>
+
+    </section>
+  </main>
+
+  <div id="carrito" class="carrito">
+    <ul id="lista-carrito"></ul>
+    <p id="total"></p>
+
+    <form id="form-direccion">
+
+      <label for="nombre">Nombre Completo:</label>
+      <input class="cajaText" type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required>
+
+      <br><br>
+      <label for="direccion">Ingrese su dirección:</label>
+      <input type="text" id="direccion" placeholder="Ejemplo: Calle 123 #45-67" required>
+
+      <br><br>
+      <label for="telefono">Teléfono:</label>
+      <input class="cajaText" type="tel" id="telefono" name="telefono" placeholder="Ej: +57 300 123 4567" required>
+
+      <br><br>
+      <label for="barrio">Seleccione su barrio:</label>
+      <select id="barrio" class="cajaText" required>
+        <option value="" disabled selected>Seleccione un barrio</option>
+        <option value="Otro Barrio"><strong>Otro</strong></option>
+        <optgroup label="Zona mas lejanas">
+          <option value="El Tres">El Tres</option>
+          <option value="El Dos">El Dos</option>
+          <option value="Casanova">Casanova</option>
+          <option value="Aguas Clara">Aguas Clara</option>
+          <option value="Piedrecitas">Piedrecitas</option>
+        </optgroup>
+        <optgroup label="Zonas lejana">
+          <option value="pescadores i">Pescadores I</option>
+          <option value="pescadores ii">Pescadores II</option>
+          <option value="la playa">La Playa</option>
+          <option value="Río Turbo">Río Turbo</option>
+          <option value="Las Garzas">Las Garzas</option>
+          <option value="Siete de Agosto">Siete de Agosto</option>
+          <option value="Villa María">Villa María</option>
+          <option value="El Trapiche">Yarumal</option>
+        </optgroup>
+        <optgroup label="Zona urbana">
+          <option value="Brisas del Mar">Brisas del Mar</option>
+          <option value="Buenos Aires">Buenos Aires</option>
+          <option value="Ciudadela Bolívar">Ciudadela Bolívar</option>
+          <option value="El Bosque">El Bosque</option>
+          <option value="Centro">Centro</option>
+          <option value="El Progreso">El Progreso</option>
+          <option value="Gaitán">Gaitán</option>
+          <option value="Instituto-Gonzalo Mejía">Instituto-Gonzalo Mejía</option>
+          <option value="Hoover Quintero">Hoover Quintero</option>
+          <option value="Jesús Mora">Jesús Mora</option>
+          <option value="Juan XXIII">Juan XXIII</option>
+          <option value="Julia Orozco">Julia Orozco</option>
+          <option value="Las Delicias">Las Delicias</option>
+          <option value="Las Flores">Las Flores</option>
+          <option value="Obrero">Obrero</option>
+          <option value="San Martín">San Martín</option>
+          <option value="Santa Fe">Santa Fe</option>
+          <option value="Urbanización Monterrey I">Urbanización Monterrey I</option>
+          <option value="Urbanización Monterrey II">Urbanización Monterrey II</option>
+          <option value="Urbanización Monterrey III">Urbanización Monterrey III</option>
+          <option value="Urbanización La Lucila">Urbanización La Lucila</option>
+          <option value="La Floresta">La Floresta</option>
+          <option value="Fondo Obrero">Fondo Obrero</option>
+          <option value="Veranillo">Veranillo</option>
+        </optgroup>
+      </select>
+      <br><br>
+      <label for="PuntoReferencia">Punto de referencia:</label>
+      <input type="text" id="PuntoReferencia" placeholder="Cerca a la tienda de la esquina" required>
+      <p id="costo-domicilio">Costo de domicilio: $0</p>
+    </form>
+
+    <a id="btn-whatsapp" href="#" target="_blank" class="btn-whatsapp">Enviar pedido</a>
+  </div>
+
+  <div id="descripcion-card" class="descripcion-card oculto">
+    <h2 id="titulo-desc"></h2>
+    <p id="texto-desc"></p>
+    <button onclick="cerrarDescripcion()">Cerrar</button>
+  </div>
+  <script src="../JS/menu.js"></script>
+</body>
+
+</html>

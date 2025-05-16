@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Negocios de Licores - TEXPRESS</title>
+    <link rel="stylesheet" href="../CSS/licores.css">
+</head>
+<body>
+    <header class="licores-header">
+        <h1>Negocios de Licores</h1>
+        <p>Explora una selección de los mejores negocios de licores en Turbo. Encuentra bebidas para cada ocasión con calidad y servicio garantizados.</p>
+    </header>
+
+    <section class="licores-section">
+        <div class="licores-container">
+            <!-- Tarjeta 1 -->
+            <div class="licor-card">
+                <div class="licor-img-container">
+                    <img src="../IMG/el buen gusto.jpg" alt="Licorería El Buen Gusto" class="licor-img">
+                </div>
+                <h3>Licorería El Buen Gusto</h3>
+                <p>Especialistas en vinos y licores premium.</p>
+                <a href="#" class="licor-button" onclick="openModal('Licorería El Buen Gusto', 'Especialistas en vinos y licores premium. Contamos con una amplia selección de vinos y licores de alta calidad.')">Ver más</a>
+            </div>
+
+            <!-- Tarjeta 2 -->
+            <div class="licor-card">
+                <div class="licor-img-container">
+                    <img src="../IMG/la canva de turbo.png" alt="La Cava de Turbo" class="licor-img">
+                </div>
+                <h3>La Cava de Turbo</h3>
+                <p>Tu lugar para encontrar las mejores cervezas artesanales.</p>
+                <a href="#" class="licor-button" onclick="openModal('La Cava de Turbo', 'Ofrecemos una selección exclusiva de cervezas artesanales locales e importadas. ¡Perfectas para cualquier ocasión!')">Ver más</a>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="licor-card">
+                <div class="licor-img-container">
+                    <img src="../IMG/el barril.jpeg" alt="Distribuidora El Barril" class="licor-img">
+                </div>
+                <h3>Distribuidora El Barril</h3>
+                <p>Variedad de licores nacionales e importados.</p>
+                <a href="#" class="licor-button" onclick="openModal('Distribuidora El Barril', 'Somos especialistas en licores nacionales e importados. Encuentra tus marcas favoritas con nosotros.')">Ver más</a>
+            </div>
+
+            <!-- Tarjeta 4 -->
+            <div class="licor-card">
+                <div class="licor-img-container">
+                    <img src="../IMG/la fiesta.png" alt="Bodega La Fiesta" class="licor-img">
+                </div>
+                <h3>Bodega La Fiesta</h3>
+                <p>Todo lo que necesitas para tus celebraciones.</p>
+                <a href="#" class="licor-button" onclick="openModal('Bodega La Fiesta', 'Tu mejor aliado para celebraciones. Contamos con licores, vinos y cervezas para cualquier evento.')">Ver más</a>
+            </div>
+
+            <!-- Tarjeta 5 -->
+            <div class="licor-card">
+                <div class="licor-img-container">
+                    <img src="../IMG/el rincon del vino.png" alt="El Rincón del Vino" class="licor-img">
+                </div>
+                <h3>El Rincón del Vino</h3>
+                <p>Vinos exclusivos para los paladares más exigentes.</p>
+                <a href="#" class="licor-button" onclick="openModal('El Rincón del Vino', 'Descubre nuestra selección de vinos exclusivos. Perfectos para los amantes del buen vino.')">Ver más</a>
+            </div>
+
+            <!-- Tarjeta 6 -->
+            <div class="licor-card">
+                <div class="licor-img-container">
+                    <img src="../IMG/Cervecería Artesanal Turbo.png" alt="Cervecería Artesanal Turbo" class="licor-img">
+                </div>
+                <h3>Cervecería Artesanal Turbo</h3>
+                <p>Las mejores cervezas artesanales de la región.</p>
+                <a href="#" class="licor-button" onclick="openModal('Cervecería Artesanal Turbo', 'Disfruta de nuestras cervezas artesanales, elaboradas con ingredientes locales y técnicas tradicionales.')">Ver más</a>
+            </div>
+
+            <!-- Tarjeta 7 -->
+            <div class="licor-card">
+                <div class="licor-img-container">
+                    <img src="../IMG/Licorería La Esquina.png" alt="Licorería La Esquina" class="licor-img">
+                </div>
+                <h3>Licorería La Esquina</h3>
+                <p>Tu licorería de confianza en Turbo.</p>
+                <a href="#" class="licor-button" onclick="openModal('Licorería La Esquina', 'Encuentra tus licores favoritos en nuestra tienda. Calidad y buen precio garantizados.')">Ver más</a>
+            </div>
+
+            <!-- Tarjeta 8 -->
+            <div class="licor-card">
+                <div class="licor-img-container">
+                    <img src="../IMG/Bebidas Premium Turbo.png" alt="Bebidas Premium Turbo" class="licor-img">
+                </div>
+                <h3>Bebidas Premium Turbo</h3>
+                <p>La mejor selección de bebidas premium.</p>
+                <a href="#" class="licor-button" onclick="openModal('Bebidas Premium Turbo', 'Ofrecemos una selección premium de licores y vinos para los paladares más exigentes.')">Ver más</a>
+            </div>
+
+            <!-- Tarjeta 9 -->
+            <div class="licor-card">
+                <div class="licor-img-container">
+                    <img src="../IMG/Bodega El Barril Dorado.png" alt="Bodega El Barril Dorado" class="licor-img">
+                </div>
+                <h3>Bodega El Barril Dorado</h3>
+                <p>Especialistas en licores artesanales y exclusivos.</p>
+                <a href="./HTML/registro.html" class="licor-button">Ver más</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="infoModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <h3 id="modal-title">Título del Negocio</h3>
+            <p id="modal-description">Descripción del negocio.</p>
+        </div>
+    </div>
+
+    <footer class="licores-footer">
+        <p>&copy; 2025 TEXPRESS. Todos los derechos reservados.</p>
+    </footer>
+    <script src="/Proyecto TEXPRESS 1.2.1/JS/licores.js"></script>
+</body>
+</html>

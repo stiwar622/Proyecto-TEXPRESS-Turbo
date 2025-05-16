@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercados de Texpress</title>
+    <link rel="icon" href="../IMG/Logotipo.png">
+    <link rel="stylesheet" href="../CSS/Mercados.css">
+
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="../texpress.html">
+            <div class="logo">
+                <img src="../IMG/Logotipo.png" alt="Logo de la página">
+            </div>
+        </a>
+
+
+        <div class="hamburguesa" id="hamburguesa">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="search-bar">
+            <button id="searchButton" class="search-button"><img src="../IMG/lupa.png" width="18px"></button>
+            <input type="text" id="searchInput" placeholder="Buscar...">
+        </div>
+    </div>
+    <div class="restaurantes-contenedor">
+        <a href="../HTML/MenuFarmacenter.html">
+            <div class="card" data-category="FarmaCenter, Salud,Farmacias">
+                <div class="card-interno">
+                    <div class="card-frente">
+                        <img src="../IMG/FarmaCenter.png">
+                        <h3>FARMACENTER</h3>
+                    </div>
+
+                    <div class="card-detras">
+                        <h3>FarmaCenter</h3>
+                        <p>Ubicacion: CL 112 #17 - 51 Julia Orozo</p>
+                        <p>Telefono: 3207106907</p>
+                        <p>Horario: Lunes a Domingo de 8:00PM a 11:00PM</p>
+                        <p>Calificación: 4.5 <i class="fas fa-star" style="color: #F6C641;"></i></p>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="./JugueteriaPlayTodayToys.html">
+            <div class="card" data-category="Mi Rica Arepa,Jugueteria, juguetes,bebe">
+                <div class="card-interno">
+                    <div id="ugueteriaPlayTodayToys" class="card-frente">
+                        <img src="../IMG/JugueteriaPlayTodayToys.png">
+                        <h3>JUGUETERIA PLAY TODAY TOYS</h3>
+                    </div>
+                    <div class="card-detras">
+                        <h3>Jugueteria Play Today Toys</h3>
+                        <p>Ubicacion: CL 112 #17 - 51 Julia Orozo</p>
+                        <p>Telefono: 3207106907</p>
+                        <p>Horario: Lunes a Domingo de 8:00PM a 11:00PM</p>
+                        <p>Calificación: 4.5 <i class="fas fa-star" style="color: #F6C641;"></i></p>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+
+        <a href="./VeterinariaAmericana.html">
+            <div class="card" data-category="Veterinaria,Mascotas, perros, gatos, animales">
+                <div class="card-interno">
+                    <div id="VeterinariaAmericana" class="card-frente">
+                        <img src="../IMG/VeterinariaAmericana.png">
+                        <h3>VETERINARIA AMERICANA</h3>
+                    </div>
+                    <div class="card-detras">
+                        <h3>Veterinaria Americana</h3>
+                        <p>Ubicacion: CL 112 #17 - 51 Julia Orozo</p>
+                        <p>Telefono: 3207106907</p>
+                        <p>Horario: Lunes a Domingo de 8:00PM a 11:00PM</p>
+                        <p>Calificación: 4.5 <i class="fas fa-star" style="color: #F6C641;"></i></p>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <nav class="sidebar" id="sidebar">
+        <ul>
+            <li class="submenu"><a href="#">Inicio</a></li>
+            <li class="submenu">
+                <a href="#" id="toggleSubmenu">Filtros <img src="../IMG/flechas-hacia-abajo.png"></a>
+                <ul class="submenu-list" id="submenuList">
+                    <li><input type="checkbox" id="comida-rapida"><label for="comida-rapida">Promociones <img
+                                src="../IMG/rebaja.png"></label></li>
+                    <li><input type="checkbox" id="farmacias"><label for="farmacias">Farmacias</label></li>
+                    <li><input type="checkbox" id="comida-tipica"><label for="comida-tipica">Bebidas / licores</label>
+                    </li>
+                    <li><input type="checkbox" id="comida-tipica"><label for="comida-tipica">Abarrotes</label></li>
+                    <li><input type="checkbox" id="comida-tipica"><label for="comida-tipica">Bebés</label>
+                    </li>
+                    <li><input type="checkbox" id="comida-tipica"><label for="comida-tipica">Salud</label>
+                    </li>
+                    <li><input type="checkbox" id="Jugueteria"><label for="Jugueteria">Juguetes</label>
+                    </li>
+                    <li><input type="checkbox" id="comida-tipica"><label for="comida-tipica">Papelería</label></li>
+                    <li><input type="checkbox" id="comida-tipica"><label for="comida-tipica">Hogar y Cocina</label></li>
+                    <li><input type="checkbox" id="comida-tipica"><label for="comida-tipica">Mascotas</label></li>
+                    <li><input type="checkbox" id="comida-tipica"><label for="comida-tipica">Electronica</label></li>
+                </ul>
+            </li>
+        </ul>
+        </li>
+
+        <li class="submenu1">
+            <a href="#" id="toggleSubmenu1">Somos <img src="../IMG/flechas-hacia-abajo.png"> </a>
+        </li>
+        <ul class="submenu-list1" id="submenuList1">
+            <li><a href="#">Pruebas</a></li>
+            <li><a href="">Experiencias</a></li>
+        </ul>
+        </li>
+
+        <li class="submenu2">
+            <a href="#" id="toggleSubmenu2">Soporte <img src="../IMG/flechas-hacia-abajo.png"></a>
+        </li>
+        <ul class="submenu-list2" id="submenuList2">
+            <li><a href="#">Asesores</a></li>
+            <li><a href="#">Comerciantes</a></li>
+            <li><a href="#">Directores</a></li>
+        </ul>
+        </li>
+
+        <li class="submenu3">
+            <a href="#" id="toggleSubmenu3">Contacto <img src="../IMG/flechas-hacia-abajo.png"></a>
+        </li>
+        <ul class="submenu-list3" id="submenuList3">
+            <li><a href="#">Asesores</a></li>
+            <li><a href="#">Comerciantes</a></li>
+            <li><a href="#">Directores</a></li>
+        </ul>
+        </li>
+
+        </ul>
+    </nav>
+    <script src="../JS/Mercados.js"></script>
+</body>
+
+</html>

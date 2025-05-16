@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Restaurante Mi Rica Arepa</title>
+    <link rel="stylesheet" href="../CSS/MiRicaArepa.css">
+    <link rel="Icon" href="../IMG/Logotipo.png">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a href="../texpress.html"> <img src="../IMG/Logotipo.png" alt="Logo" class="logo"></a>
+            <h1>MI RICA AREPA</h1>
+            <a href="#carrito" class="carrito-icon">
+                <img src="../IMG/Carrito.png" alt="Carrito">
+            </a>
+        </div>
+    </header>
+    <div id="mensaje-anuncio" class="mensaje-anuncio oculto">Producto añadido al carrito</div>
+    <main>
+        <section class="menu">
+
+            <div class="productos-grid" id="card-container">
+
+                <div class="producto">
+                    <div
+                        onclick="mostrarDescripcion('Descripción:','Clásica y reconfortante. Arepa dorada por fuera, suave por dentro, rellena con abundante queso derretido que se estira en cada bocado. Perfecta para acompañar el desayuno, como merienda o para calmar el antojo a cualquier hora.')">
+                        <img src="../IMG/ArepaSoloQueso.png" alt="Arepa Queso">
+                        <h3>Arepa solo queso</h3>
+                        <p>Descripción de la Arepa</p>
+                        <span class="precios">$10.000</span>
+                    </div>
+                    <br><br>
+                    <button class="agregar-carrito">Agregar al carrito</button>
+                </div>
+
+                <div class="producto">
+                    <div
+                        onclick="mostrarDescripcion('Descripción:','Arepa tradicional, asada al punto perfecto y rellena con pollo desmechado jugoso, sazonado con especias caseras. Ideal para disfrutar un almuerzo rápido, una cena ligera o simplemente consentirte con un sabor clásico y lleno de sabor.')">
+                        <img src="../IMG/ArepaChiken.png" alt="Arepa Pollo">
+                        <h3>Arepa Chiken</h3>
+                        <p>Descripción de la Arepa</p>
+                        <span class="precios">$13.000</span>
+                    </div>
+                    <br><br>
+                    <button class="agregar-carrito">Agregar al carrito</button>
+                </div>
+
+                <div class="producto">
+                    <div
+                        onclick="mostrarDescripcion('Descripción:','Una combinación que nunca falla. Arepa doradita rellena con pollo desmechado sazonado y una generosa porción de queso derretido. Cada bocado mezcla lo cremoso con lo jugoso, ideal para quienes lo quieren todo en uno.')">
+                        <img src="../IMG/ArepaMixta.png" alt="Pizza Mixta">
+                        <h3>Arepa Mixta</h3>
+                        <p>Descripción de la Arepa</p>
+                        <span class="precios">$20.000</span>
+                    </div>
+                    <br><br>
+                    <button class="agregar-carrito">Agregar al carrito</button>
+                </div>
+
+                <div class="producto">
+                    <div
+                        onclick="mostrarDescripcion('Descripción:','La reina de la casa. Arepa dorada y crujiente, rellena con carne molida jugosa, acompañada de una mezcla de vegetales frescos y salsas caseras que le dan un toque especial. Ideal para compartir o disfrutar solo.')">
+                    <img src="../IMG/ArepaQuesoCarne.png" alt="Arepa Queso Carne">
+                    <h3>Arepa Queso y Carne</h3>
+                    <p>Descripción de la Arepa</p>
+                    <span class="precios">$25.000</span>
+                    </div>
+                    <br><br>
+                    <button class="agregar-carrito">Agregar al carrito</button>
+                </div>
+            </div>
+            </div>
+            <div id="bebidas-container">
+                <h2>Bebidas</h2>
+                <div id="bebidas-list"></div>
+            </div>
+            <div id="paginacion" class="paginacion"></div>
+        </section>
+        <section class="carrito">
+            <h2>Carrito <img src="../IMG/Carrito.png" alt=""></h2>
+            <ul id="lista-carrito-secundario"></ul>
+            <p id="total-secundario"></p>
+
+        </section>
+    </main>
+
+    <div id="carrito" class="carrito">
+        <ul id="lista-carrito"></ul>
+        <p id="total"></p>
+
+        <form id="form-direccion">
+
+            <label for="nombre">Nombre Completo:</label>
+            <input class="cajaText" type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required>
+
+            <br><br>
+            <label for="direccion">Ingrese su dirección:</label>
+            <input type="text" id="direccion" placeholder="Ejemplo: Calle 123 #45-67" required>
+
+            <br><br>
+            <label for="telefono">Teléfono:</label>
+            <input class="cajaText" type="tel" id="telefono" name="telefono" placeholder="Ej: +57 300 123 4567"
+                required>
+
+            <br><br>
+            <label for="barrio">Seleccione su barrio:</label>
+            <select id="barrio" class="cajaText" required>
+                <option value="" disabled selected>Seleccione un barrio</option>
+                <option value="Otro Barrio"><strong>Otro</strong></option>
+                <optgroup label="Zona mas lejanas">
+                    <option value="El Tres">El Tres</option>
+                    <option value="El Dos">El Dos</option>
+                    <option value="Casanova">Casanova</option>
+                    <option value="Aguas Clara">Aguas Clara</option>
+                    <option value="Piedrecitas">Piedrecitas</option>
+                </optgroup>
+                <optgroup label="Zonas lejana">
+                    <option value="pescadores i">Pescadores I</option>
+                    <option value="pescadores ii">Pescadores II</option>
+                    <option value="la playa">La Playa</option>
+                    <option value="Río Turbo">Río Turbo</option>
+                    <option value="Las Garzas">Las Garzas</option>
+                    <option value="Siete de Agosto">Siete de Agosto</option>
+                    <option value="Villa María">Villa María</option>
+                    <option value="El Trapiche">Yarumal</option>
+                </optgroup>
+                <optgroup label="Zona urbana">
+                    <option value="Brisas del Mar">Brisas del Mar</option>
+                    <option value="Buenos Aires">Buenos Aires</option>
+                    <option value="Ciudadela Bolívar">Ciudadela Bolívar</option>
+                    <option value="El Bosque">El Bosque</option>
+                    <option value="Centro">Centro</option>
+                    <option value="El Progreso">El Progreso</option>
+                    <option value="Gaitán">Gaitán</option>
+                    <option value="Instituto-Gonzalo Mejía">Instituto-Gonzalo Mejía</option>
+                    <option value="Hoover Quintero">Hoover Quintero</option>
+                    <option value="Jesús Mora">Jesús Mora</option>
+                    <option value="Juan XXIII">Juan XXIII</option>
+                    <option value="Julia Orozco">Julia Orozco</option>
+                    <option value="Las Delicias">Las Delicias</option>
+                    <option value="Las Flores">Las Flores</option>
+                    <option value="Obrero">Obrero</option>
+                    <option value="San Martín">San Martín</option>
+                    <option value="Santa Fe">Santa Fe</option>
+                    <option value="Urbanización Monterrey I">Urbanización Monterrey I</option>
+                    <option value="Urbanización Monterrey II">Urbanización Monterrey II</option>
+                    <option value="Urbanización Monterrey III">Urbanización Monterrey III</option>
+                    <option value="Urbanización La Lucila">Urbanización La Lucila</option>
+                    <option value="La Floresta">La Floresta</option>
+                    <option value="Fondo Obrero">Fondo Obrero</option>
+                    <option value="Veranillo">Veranillo</option>
+                </optgroup>
+            </select>
+            <br><br>
+            <label for="PuntoReferencia">Punto de referencia:</label>
+            <input type="text" id="PuntoReferencia" placeholder="Cerca a la tienda de la esquina" required>
+            <p id="costo-domicilio">Costo de domicilio: $0</p>
+        </form>
+
+        <a id="btn-whatsapp" href="#" target="_blank" class="btn-whatsapp">Enviar pedido</a>
+    </div>
+
+    <div id="descripcion-card" class="descripcion-card oculto">
+        <h2 id="titulo-desc"></h2>
+        <p id="texto-desc"></p>
+        <button onclick="cerrarDescripcion()">Cerrar</button>
+    </div>
+    <script src="../JS/MiRicaArepa.js"></script>
+</body>
+
+</html>

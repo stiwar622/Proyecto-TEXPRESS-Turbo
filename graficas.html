@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráficas TEXPRESS</title>
+    <link rel="stylesheet" href="../CSS/graficas.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../JS/graficas.js" defer></script>
+</head>
+<body>
+    <div class="logo-container">
+        <a href="../texpress.html">
+            <img src="../IMG/IconTexpress.png" alt="Logo TEXPRESS" class="logo">
+        </a>
+    </div>
+    <header class="header">
+        <h1>Gráficas TEXPRESS</h1>
+    </header>
+
+    <section class="chart-section" id="categorias">
+        <h2>Categorías Populares</h2>
+        <div class="chart-container">
+            <canvas id="categoriasChart"></canvas>
+        </div>
+        <div class="chart-info">
+            <strong>Gráfico de Barras – Categorías más solicitadas</strong><br>
+            <span class="fuente">
+                Fuente: Observatorio de Turismo y Comercio (2025). Reporte trimestral Q1-2025. Secretaría de Desarrollo Económico.
+            </span>
+            <p>
+                Muestra el volumen promedio de pedidos mensuales por categoría en plataformas digitales (en miles de transacciones). Las categorías más populares son Restaurantes, Mercados, Farmacias, Licores y Tiendas.
+            </p>
+        </div>
+    </section>
+
+    <section class="chart-section" id="registro">
+        <h2>Registro de Comercios 2025</h2>
+        <div class="chart-container">
+            <canvas id="registroChart"></canvas>
+        </div>
+        <div class="chart-info">
+            <strong>Gráfico de Líneas – Registro mensual de comercios</strong><br>
+            <span class="fuente">
+                Fuente: RUES (2025). Reporte de dinámica empresarial. 
+                
+            </span>
+            <p>
+                Evolución del registro de nuevos comercios durante 2025. El dato de mayo corresponde a la primera quincena (proyección). Observa cómo varía el crecimiento mes a mes.
+            </p>
+        </div>
+    </section>
+
+    <section class="chart-section" id="uso">
+        <h2>Uso Semanal de la Plataforma</h2>
+        <div class="chart-container">
+            <canvas id="usoChart"></canvas>
+        </div>
+        <div class="chart-info">
+            <strong>Gráfico de Líneas – Usuarios activos por día</strong>
+            <p>
+                Este gráfico muestra la cantidad de usuarios activos por día de la semana. Identifica los días con mayor actividad y participación en TEXPRESS para optimizar campañas y servicios.
+            </p>
+        </div>
+    </section>
+
+    <section class="chart-section" id="distribucion">
+        <h2>Distribución de Categorías</h2>
+        <div class="chart-container">
+            <canvas id="tortaChart"></canvas>
+        </div>
+        <div class="chart-info">
+            <strong>Gráfico de Dona – Distribución por categoría</strong><br>
+            <span class="fuente">
+                Fuente: Datos Abiertos (2024). Registro Único Empresarial - RUES. 
+                
+            </span>
+            <p>
+                Representa el porcentaje de comercios registrados por categoría principal en el primer trimestre de 2025. Los valores son estimaciones basadas en tendencias históricas oficiales.
+            </p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 TEXPRESS. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

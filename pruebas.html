@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresas Registradas - TEXPRESS</title>
+    <link rel="stylesheet" href="../CSS/pruebas.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <a href="../texpress.html">
+                <img src="../IMG/Logotipo.png" alt="Logo de TEXPRESS">
+            </a>
+        </div>
+        <h1>Empresas Registradas</h1>
+    </header>
+
+    <main class="empresas-section">
+        <h2>Conoce a las empresas que ya forman parte de <span class="TEXPRESS">TEXPRESS</span></h2>
+        <p>Estas son algunas de las empresas que confían en nosotros:</p>
+        <div class="empresas-container">
+            <!-- Restaurante El Sabor -->
+            <div class="empresa-card">
+                <img src="../IMG/imagen 1.jpg" alt="Restaurante El Sabor">
+                <h3>Restaurante El Sabor</h3>
+                <p>Especialidad en comida rápida y almuerzos.</p>
+                <button class="ver-mas-button" onclick="openModal('modalRestauranteElSabor')">Ver más</button>
+            </div>
+            <div id="modalRestauranteElSabor" class="modal">
+                <div class="modal-content">
+                    <span class="close-button" onclick="closeModal('modalRestauranteElSabor')">&times;</span>
+                    <h3 style="text-align: center;">Restaurante El Sabor</h3>
+                    <p style="text-align: center;"><strong>Descripción:</strong> Especialidad en comida rápida y almuerzos.</p>
+                    <p style="text-align: center;"><strong>Encargado:</strong> Juan Pérez</p>
+                    <p style="text-align: center;"><strong>Horario:</strong> Lunes a viernes de 8:00 AM a 8:00 PM</p>
+                    <p style="text-align: center;"><strong>Teléfono:</strong> 123-456-7890</p>
+                    <p style="text-align: center;"><strong>Dirección:</strong> Calle 10 #20-30, Ciudad</p>
+                    <p style="text-align: center;"><strong>Servicios:</strong> Comida rápida, almuerzos, bebidas</p>
+                </div>
+            </div>
+
+            <!-- Supermercado La Economía -->
+            <div class="empresa-card">
+                <img src="../IMG/imagen 2.jpg" alt="Supermercado La Economía">
+                <h3>Supermercado La Economía</h3>
+                <p>Todo lo que necesitas para tu hogar.</p>
+                <button class="ver-mas-button" onclick="openModal('modalSupermercadoLaEconomia')">Ver más</button>
+            </div>
+            <div id="modalSupermercadoLaEconomia" class="modal">
+                <div class="modal-content">
+                    <span class="close-button" onclick="closeModal('modalSupermercadoLaEconomia')">&times;</span>
+                    <h3 style="text-align: center;">Supermercado La Economía</h3>
+                    <p style="text-align: center;"><strong>Descripción:</strong> Todo lo que necesitas para tu hogar.</p>
+                    <p style="text-align: center;"><strong>Encargado:</strong> María López</p>
+                    <p style="text-align: center;"><strong>Horario:</strong> Lunes a sábado de 7:00 AM a 9:00 PM</p>
+                    <p style="text-align: center;"><strong>Teléfono:</strong> 987-654-3210</p>
+                    <p style="text-align: center;"><strong>Dirección:</strong> Avenida Principal #15-50, Ciudad</p>
+                    <p style="text-align: center;"><strong>Servicios:</strong> Productos de hogar, alimentos, limpieza</p>
+                </div>
+            </div>
+
+            <!-- Farmacia Salud Total -->
+            <div class="empresa-card">
+                <img src="../IMG/imagen 3.jpg" alt="Farmacia Salud Total">
+                <h3>Farmacia Salud Total</h3>
+                <p>Medicamentos y productos de cuidado personal.</p>
+                <button class="ver-mas-button" onclick="openModal('modalFarmaciaSaludTotal')">Ver más</button>
+            </div>
+            <div id="modalFarmaciaSaludTotal" class="modal">
+                <div class="modal-content">
+                    <span class="close-button" onclick="closeModal('modalFarmaciaSaludTotal')">&times;</span>
+                    <h3 style="text-align: center;">Farmacia Salud Total</h3>
+                    <p style="text-align: center;"><strong>Descripción:</strong> Medicamentos y productos de cuidado personal.</p>
+                    <p style="text-align: center;"><strong>Encargado:</strong> Carlos Gómez</p>
+                    <p style="text-align: center;"><strong>Horario:</strong> Lunes a domingo de 8:00 AM a 10:00 PM</p>
+                    <p style="text-align: center;"><strong>Teléfono:</strong> 321-654-9870</p>
+                    <p style="text-align: center;"><strong>Dirección:</strong> Calle 25 #30-40, Ciudad</p>
+                    <p style="text-align: center;"><strong>Servicios:</strong> Medicamentos, cuidado personal, vitaminas</p>
+                </div>
+            </div>
+
+            <!-- Tienda El Ahorro -->
+            <div class="empresa-card">
+                <img src="../IMG/imagen 7.jpg" alt="Tienda El Ahorro">
+                <h3>Tienda El Ahorro</h3>
+                <p>Productos básicos y más.</p>
+                <button class="ver-mas-button" onclick="openModal('modalTiendaElAhorro')">Ver más</button>
+            </div>
+            <div id="modalTiendaElAhorro" class="modal">
+                <div class="modal-content">
+                    <span class="close-button" onclick="closeModal('modalTiendaElAhorro')">&times;</span>
+                    <h3 style="text-align: center;">Tienda El Ahorro</h3>
+                    <p style="text-align: center;"><strong>Descripción:</strong> Productos básicos y más.</p>
+                    <p style="text-align: center;"><strong>Encargado:</strong> Ana Martínez</p>
+                    <p style="text-align: center;"><strong>Horario:</strong> Lunes a sábado de 9:00 AM a 8:00 PM</p>
+                    <p style="text-align: center;"><strong>Teléfono:</strong> 456-789-1234</p>
+                    <p style="text-align: center;"><strong>Dirección:</strong> Carrera 5 #10-15, Ciudad</p>
+                    <p style="text-align: center;"><strong>Servicios:</strong> Abarrotes, productos básicos, snacks</p>
+                </div>
+            </div>
+
+            <!-- Licorería La Fiesta -->
+            <div class="empresa-card">
+                <img src="../IMG/imagen 4.png" alt="Licorería La Fiesta">
+                <h3>Licorería La Fiesta</h3>
+                <p>Variedad de licores para tus celebraciones.</p>
+                <button class="ver-mas-button" onclick="openModal('modalLicoreriaLaFiesta')">Ver más</button>
+            </div>
+            <div id="modalLicoreriaLaFiesta" class="modal">
+                <div class="modal-content">
+                    <span class="close-button" onclick="closeModal('modalLicoreriaLaFiesta')">&times;</span>
+                    <h3 style="text-align: center;">Licorería La Fiesta</h3>
+                    <p style="text-align: center;"><strong>Descripción:</strong> Variedad de licores para tus celebraciones.</p>
+                    <p style="text-align: center;"><strong>Encargado:</strong> Pedro Ramírez</p>
+                    <p style="text-align: center;"><strong>Horario:</strong> Lunes a domingo de 10:00 AM a 11:00 PM</p>
+                    <p style="text-align: center;"><strong>Teléfono:</strong> 789-123-4567</p>
+                    <p style="text-align: center;"><strong>Dirección:</strong> Calle 50 #60-70, Ciudad</p>
+                    <p style="text-align: center;"><strong>Servicios:</strong> Licores, cervezas, cocteles</p>
+                </div>
+            </div>
+
+            <!-- Panadería Dulce Hogar -->
+            <div class="empresa-card">
+                <img src="../IMG/imagen 5.png" alt="Panadería Dulce Hogar">
+                <h3>Panadería Dulce Hogar</h3>
+                <p>Pan fresco y pasteles deliciosos.</p>
+                <button class="ver-mas-button" onclick="openModal('modalPanaderiaDulceHogar')">Ver más</button>
+            </div>
+            <div id="modalPanaderiaDulceHogar" class="modal">
+                <div class="modal-content">
+                    <span class="close-button" onclick="closeModal('modalPanaderiaDulceHogar')">&times;</span>
+                    <h3 style="text-align: center;">Panadería Dulce Hogar</h3>
+                    <p style="text-align: center;"><strong>Descripción:</strong> Pan fresco y pasteles deliciosos.</p>
+                    <p style="text-align: center;"><strong>Encargado:</strong> Laura Torres</p>
+                    <p style="text-align: center;"><strong>Horario:</strong> Lunes a domingo de 6:00 AM a 8:00 PM</p>
+                    <p style="text-align: center;"><strong>Teléfono:</strong> 654-321-9870</p>
+                    <p style="text-align: center;"><strong>Dirección:</strong> Carrera 8 #12-34, Ciudad</p>
+                    <p style="text-align: center;"><strong>Servicios:</strong> Panadería, pasteles, postres</p>
+                </div>
+            </div>
+
+            <!-- Restaurante Gourmet -->
+            <div class="empresa-card">
+                <img src="../IMG/imagen 6.png" alt="Restaurante Gourmet">
+                <h3>Restaurante Gourmet</h3>
+                <p>Alta cocina para los paladares más exigentes.</p>
+                <button class="ver-mas-button" onclick="openModal('modalRestauranteGourmet')">Ver más</button>
+            </div>
+            <div id="modalRestauranteGourmet" class="modal">
+                <div class="modal-content">
+                    <span class="close-button" onclick="closeModal('modalRestauranteGourmet')">&times;</span>
+                    <h3 style="text-align: center;">Restaurante Gourmet</h3>
+                    <p style="text-align: center;"><strong>Descripción:</strong> Alta cocina para los paladares más exigentes.</p>
+                    <p style="text-align: center;"><strong>Encargado:</strong> Sofía Herrera</p>
+                    <p style="text-align: center;"><strong>Horario:</strong> Martes a domingo de 12:00 PM a 10:00 PM</p>
+                    <p style="text-align: center;"><strong>Teléfono:</strong> 987-123-6540</p>
+                    <p style="text-align: center;"><strong>Dirección:</strong> Avenida Gourmet #1-2, Ciudad</p>
+                    <p style="text-align: center;"><strong>Servicios:</strong> Alta cocina, vinos, postres</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="social-icons">
+        <p>Síguenos en nuestras redes sociales:</p>
+        <div class="social-links">
+            <a href="#" target="_blank" class="social-link facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" target="_blank" class="social-link whatsapp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="#" target="_blank" class="social-link instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+        <p>© 2025 TEXPRESS. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../JS/pruebas.js"></script>
+    
+</body>
+</html>

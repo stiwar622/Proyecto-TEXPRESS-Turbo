@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiendas de Ropa</title>
+    <link rel="icon" href="../IMG/Logotipo.png">
+    <link rel="stylesheet" href="../CSS/TiendaRopa.css">
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+</head>
+<body>
+    <div class="navbar">
+        <a href="../texpress.html">
+        <div class="logo">
+            <img src="../IMG/Logotipo.png" alt="Logo de la página">
+        </div></a>
+    
+
+        <div class="hamburguesa" id="hamburguesa">
+            <span></span>
+            <span></span>
+            <span></span> 
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="search-bar">
+            <button id="searchButton" class="search-button"><img src="../IMG/lupa.png" width="18px"></button>
+            <input type="text" id="searchInput" placeholder="Buscar...">
+        </div>
+    </div>
+    <div class="restaurantes-contenedor">
+        <a href="#">
+
+            <div class="card" data-category="comida-rapida">
+                <div class="card-interno">
+                    <div class="card-frente">
+                        <img src="../IMG/Adida.jpg">
+                        <h3>Adidas</h3>      
+                    </div>
+
+                    <div class="card-detras">
+                        <h3>Adidas</h3>
+                        <p>Ubicacion: CL 112 #17 - 51 Julia Orozo</p>
+                        <p>Telefono: 3207106907</p>
+                        <p>Horario: Lunes a Domingo de 8:00PM a 11:00PM</p>
+                        <p>Calificación: 4.5 <i class="fas fa-star" style="color: #F6C641;"></i></p>
+                    </div>
+                </div> 
+            </div>
+        </a>
+        <a href="#">
+            <div class="card" data-category="Mi Rica Arepa">
+                    <div class="card-interno">
+                        <div class="card-frente">
+                            <img src="../IMG/Nike.jpg">
+                            <h3>Nike</h3>
+                        </div>
+                        <div class="card-detras">
+                            <h3>Nike</h3>
+                            <p>Ubicacion: CL 112 #17 - 51 Julia Orozo</p>
+                            <p>Telefono: 3207106907</p>
+                            <p>Horario: Lunes a Domingo de 8:00PM a 11:00PM</p>
+                            <p>Calificación: 4.5 <i class="fas fa-star" style="color: #F6C641;"></i></p>
+                        </div>
+                    </div>
+            </div>
+        </a>
+
+        <div class="card">
+            <div class="card-interno">
+                <div class="card-frente">
+                    <img src="../IMG/monastery.jpg">
+                    <h3>Monastery</h3>
+                </div>
+                <div class="card-detras">
+                    <h3>Monastery</h3>
+                    <p>Ubicacion: CL 112 #17 - 51 Julia Orozo</p>
+                    <p>Telefono: 3207106907</p>
+                    <p>Horario: Lunes a Domingo de 8:00PM a 11:00PM</p>
+                    <p>Calificación: 4.5 <i class="fas fa-star" style="color: #F6C641;"></i></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-interno">
+                <div class="card-frente">
+                    <img src="../IMG/Amiri.jpg">
+                    <h3>Amiri</h3>
+                </div>
+                <div class="card-detras">
+                    <h3>Amiri</h3>
+                    <p>Ubicacion: CL 112 #17 - 51 Julia Orozo</p>
+                    <p>Telefono: 3207106907</p>
+                    <p>Horario: Lunes a Domingo de 8:00PM a 11:00PM</p>
+                    <p>Calificación: 4.5 <i class="fas fa-star" style="color: #F6C641;"></i></p>
+                </div>
+            </div>
+        </div>
+
+      
+    <nav class="sidebar" id="sidebar">
+        <ul>
+             <li class="submenu"><a href="#">Inicio</a></li>
+    
+             <li class="submenu">
+                  <a href="#" id="toggleSubmenu">Filtros <img src="../IMG/flechas-hacia-abajo.png"></a>
+                  <ul class="submenu-list" id="submenuList">
+                    <li><input type="checkbox" id="comida-rapida"><label for="comida-rapida">Mujer</label></li>
+                    <li><input type="checkbox" id="comida-tipica"><label for="comida-tipica">Hombre</label></li>
+                    <li><input type="checkbox" id="comida-tipica"><label for="comida-tipica">Bebes</label></li>
+                     <li><input type="checkbox" id="comida-tipica"><label for="comida-tipica">Niños</label></li>
+                     
+                  </ul>
+             </li>
+    
+             <li class="submenu1">
+                  <a href="#" id="toggleSubmenu1">Somos <img src="../IMG/flechas-hacia-abajo.png"> </a></li>
+                  <ul class="submenu-list1" id="submenuList1">
+                      <li><a href="#">¡Conoce nuestros aliados!</a></li>
+                      <li><a href="h">¿Quienes somos?</a></li>
+                 </ul>
+             </li>
+    
+             <li class="submenu2">
+                <a href="#" id="toggleSubmenu2">Soporte <img src="../IMG/flechas-hacia-abajo.png"></a></li>
+                <ul class="submenu-list2" id="submenuList2">
+                    <li><a href="#">Asesores</a></li>
+                    <li><a href="#">Comerciantes</a></li>
+                    <li><a href="#">Directores</a></li>
+                </ul>
+           </li>
+    
+             <li class="submenu3">
+                 <a href="#" id="toggleSubmenu3">Contacto <img src="../IMG/flechas-hacia-abajo.png"></a></li>
+                 <ul class="submenu-list3" id="submenuList3">
+                     <li><a href="#">Asesores</a></li>
+                     <li><a href="#">Comerciantes</a></li>
+                     <li><a href="#">Directores</a></li>
+                 </ul>
+            </li>
+    
+        </ul>
+    </nav>
+    <script src="../JS/TiendaRopa.js"></script>
+</body>
+</html>
